@@ -8,6 +8,7 @@ Dependency:<br>
 KDE5<br>
 awesome-widgets<br>
 python3<br>
+intel parallel studio<br>
 geopy<br>
 bash<br>
 dig<br>
