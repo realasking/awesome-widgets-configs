@@ -1,0 +1,14 @@
+[Desktop%20Entry]
+Comment=obtain local time in local style
+Encoding=UTF-8
+Exec=/home/realasking/bin/obtain_time.sh
+Name=/home/realasking/.local/share/awesomewidgets/scripts/localtime.desktop
+X-AW-Active=true
+X-AW-ApiVersion=5
+X-AW-Filters=
+X-AW-Interval=1
+X-AW-Number=4
+X-AW-Prefix=
+X-AW-Redirect=nothing
+X-AW-Schedule=
+X-AW-Socket=

@@ -1,0 +1,149 @@
+<p align="justify"> $custom1
+现在时间:$custom4</p><p align="center">$custom2 </p>CPU: $custom3
+CPU频率:${{
+function colorCpufq()
+{
+    if ($cpucl > 2500)
+        return "<span style=\"color:#ff0000;\">$cpucl</span>"
+    else
+        if($cpucl>2400)
+           return "<span style=\"color:#ffaa00;\">$cpucl</span>"
+        else
+           if($cpucl>1600)
+              return "<span style=\"color:#6b97ff;\">$cpucl</span>"
+           else
+              return "<span style=\"color:#479e34;\">$cpucl</span>"
+}
+colorCpufq()
+}} MHz  CPU占用: ${{
+function colorCpu()
+{
+    if ($cpu > 90.0)
+        return "<span style=\"color:#ff0000;\">$cpu%</span>"
+    else
+        if($cpu>50.0)
+           return "<span style=\"color:#ffaa00;\">$cpu%</span>"
+        else
+           if($cpu>30.0)
+              return "<span style=\"color:#6b97ff;\">$cpu%</span>"
+           else
+              return "<span style=\"color:#479e34;\">$cpu%</span>"
+}
+colorCpu()
+}}
+ CPU温度:${{
+function colortmp0()
+{
+    if ($temp0>80.0)
+        return "<span style=\"color:#ff0000;\">$temp0°C</span>"
+    else
+        if($temp0>70.0)
+           return "<span style=\"color:#ffaa00;\">$temp0°C</span>"
+        else
+           if($temp0>45.0)
+              return "<span style=\"color:#6b97ff;\">$temp0°C</span>"
+           else
+              return "<span style=\"color:#479e34;\">$temp0°C</span>"
+}
+colortmp0()
+}} GPU温度:${{
+function colorgtmp0()
+{
+    if ($gputemp>80.0)
+        return "<span style=\"color:#ff0000;\">$gputemp°C</span>"
+    else
+        if($gputemp>70.0)
+           return "<span style=\"color:#ffaa00;\">$gputemp°C</span>"
+        else
+           if($gputemp>45.0)
+              return "<span style=\"color:#6b97ff;\">$gputemp°C</span>"
+           else
+              return "<span style=\"color:#479e34;\">$gputemp°C</span>"
+}
+colorgtmp0()
+}}     
+ 内存: ${{
+function colorRam()
+{
+    if ($mem > 90.0)
+        return "<span style=\"color:#ff0000;\">$mem%</span>"
+    else
+        if($mem>50.0)
+           return "<span style=\"color:#ffaa00;\">$mem%</span>"
+        else
+           if($mem>30.0)
+              return "<span style=\"color:#6b97ff;\">$mem%</span>"
+           else
+              return "<span style=\"color:#479e34;\">$mem%</span>"
+}
+colorRam()
+}}   交换分区: ${{
+function colorSwap()
+{
+    if ($swap > 90.0)
+        return "<span style=\"color:#ff0000;\">$swap%</span>"
+    else
+        if($swap>50.0)
+           return "<span style=\"color:#ffaa00;\">$swap%</span>"
+        else
+           if($swap>30.0)
+              return "<span style=\"color:#6b97ff;\">$swap%</span>"
+           else
+              return "<span style=\"color:#479e34;\">$swap%</span>"
+}
+colorSwap()
+}}  
+   
+ 电池电量:${{
+function colorbat()
+{
+    if ($bat0<10.0)
+        return "<span style=\"color:#ff0000;\">$bat0%</span>"
+    else
+        if($bat0<30.0)
+           return "<span style=\"color:#ffaa00;\">$bat0%</span>"
+        else
+           if($bat0<50.0)
+              return "<span style=\"color:#6b97ff;\">$bat0%</span>"
+           else
+              return "<span style=\"color:#479e34;\">$bat0%</span>"
+}
+colorbat()
+}}  运行时间:${{
+function coloruptime()
+{
+           return "<span style=\"color:#6b97ff;\">$cuptime</span>"
+}
+coloruptime()
+}}
+
+ 网络连接:${{
+function colornet()
+{
+           return "<span style=\"color:#6b97ff;\"> $netdev</span><span style=\"color:#d0922f;\"> $down</span>/<span style=\"color:#479e34;\">$up</span>"
+}
+colornet()
+}} KB/s 
+${{
+function nettest()
+{
+   if($custom7==1)
+     return "<span>城市:</span><span style=\"color:#479e34;\">$custom6</span>"
+}
+nettest()
+}}
+${{
+function nettest2()
+{
+   if($custom7==1)
+     return "<span>天气:</span>"
+}
+nettest2()
+}}$weather1${{
+function nettest3()
+{
+   if($custom7==1)
+     return "<span>气温:</span>$temperature1<span>°C</span>"
+}
+nettest3()
+}}

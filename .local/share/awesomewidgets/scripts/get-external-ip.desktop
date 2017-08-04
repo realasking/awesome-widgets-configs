@@ -1,0 +1,14 @@
+[Desktop%20Entry]
+Comment=Custom command to get external IP
+Encoding=UTF-8
+Exec=curl www.baidu.com
+Name=aw-get-external-ip
+X-AW-Active=false
+X-AW-ApiVersion=5
+X-AW-Filters=
+X-AW-Interval=1
+X-AW-Number=0
+X-AW-Prefix=
+X-AW-Redirect=nothing
+X-AW-Schedule=
+X-AW-Socket=

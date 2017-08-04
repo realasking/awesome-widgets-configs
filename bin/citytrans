@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+#for city name translation
+#by realasking
+import sys
+from geopy.geocoders import Nominatim
+geolocator=Nominatim()
+AA=geolocator.geocode(sys.argv[1],language='zh_CN')[0]
+print(AA.split(',',1)[0])
