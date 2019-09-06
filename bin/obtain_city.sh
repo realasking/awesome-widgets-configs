@@ -1,20 +1,19 @@
 #!/bin/bash
-site1="myip.opendns.com"
-site2="@resolver1.opendns.com"
-binhome="/home/realasking/bin"
-externalip=`dig +short $site1 $site2`
-#cityname=`geoiplookup $externalip|awk '{if(NR==1) print $5;else if(NR==2) print $8;}'|xargs|sed 's/,//g'|awk '{print $2,$1}'`
-city=`geoiplookup $externalip|awk '{if(NR==1) print $5;else if(NR==2) print $8;}'|xargs|sed 's/,//g'`
-tranct=""
-for i in $city 
-do
-	tranct=${tranct}`$binhome/citytrans $i`
-done
-#countryname=`echo "$city"|awk '{print $1}'`
-#cityname=`echo "$city"|awk '{print $2}'`
-#transC=`citytrans $countryname`
-#transCT=`citytrans $cityname`
-#cityname=`geoiplookup $externalip|awk '{if(NR==2) print $8;}'|cut -d"," -f1`
-#echo "<span style=\"color:#479e34;\">$cityname</span>"
-echo "$tranct"
+site1=`dig +short www.baidu.com|grep -v "[A-Za-z]"|head -n 1`
 
+if [ "$site1"x = x ];then 
+	stat=0
+else
+	AA=`curl myip.ipip.net 2>/dev/null`
+	IPADDR=`echo $AA|awk '{print $2}'|sed 's/^...//g'`
+      regex="\b(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[1-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[1-9])\b"
+      ckStep2=`echo $IPADDR | egrep $regex | wc -l`
+      if [ $ckStep2 -eq 0 ]
+      then
+          city=""
+      else
+          #city=`echo $AA|awk '{print $4,$6}'`
+	  city=`echo $AA|awk '{print $4}'`
+      fi
+fi
+echo "<span style=\"font-size:11pt;\">$city</span>"
