@@ -1,0 +1,14 @@
+[Desktop%20Entry]
+Comment=obtain netstat
+Encoding=UTF-8
+Exec=/home/realasking/bin/obtain_netstat.sh
+Name=/home/realasking/.local/share/awesomewidgets/scripts/netstat.desktop
+X-AW-Active=true
+X-AW-ApiVersion=5
+X-AW-Filters=
+X-AW-Interval=180
+X-AW-Number=7
+X-AW-Prefix=
+X-AW-Redirect=nothing
+X-AW-Schedule=
+X-AW-Socket=

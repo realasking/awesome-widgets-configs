@@ -1,0 +1,14 @@
+[Desktop%20Entry]
+Comment=Obtain City
+Encoding=UTF-8
+Exec=/home/realasking/bin/obtain_city.sh
+Name=/home/realasking/.local/share/awesomewidgets/scripts/city.desktop
+X-AW-Active=true
+X-AW-ApiVersion=5
+X-AW-Filters=
+X-AW-Interval=900
+X-AW-Number=6
+X-AW-Prefix=
+X-AW-Redirect=nothing
+X-AW-Schedule=
+X-AW-Socket=

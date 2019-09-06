@@ -1,0 +1,14 @@
+[Desktop%20Entry]
+Comment=empty site
+Encoding=UTF-8
+Exec=/home/realasking/bin/obtain_site.sh
+Name=/home/realasking/.local/share/awesomewidgets/scripts/blanksite.desktop
+X-AW-Active=true
+X-AW-ApiVersion=5
+X-AW-Filters=space
+X-AW-Interval=1
+X-AW-Number=5
+X-AW-Prefix=
+X-AW-Redirect=nothing
+X-AW-Schedule=
+X-AW-Socket=

@@ -1,0 +1,14 @@
+[Desktop%20Entry]
+Comment=obtain distribution
+Encoding=UTF-8
+Exec=/home/realasking/bin/obtain_distro.sh
+Name=/home/realasking/.local/share/awesomewidgets/scripts/archlinux.desktop
+X-AW-Active=true
+X-AW-ApiVersion=5
+X-AW-Filters=newline
+X-AW-Interval=1
+X-AW-Number=1
+X-AW-Prefix=
+X-AW-Redirect=nothing
+X-AW-Schedule=
+X-AW-Socket=
